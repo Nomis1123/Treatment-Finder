@@ -32,7 +32,7 @@ def get_patient_data_basic(option: int) -> pd.DataFrame:
     Returns:
         pd.DataFrame: A DataFrame with patient data with only PatientID, Name, and AffectedBodyPart.
     """
-    required_columns = ['PatientID', 'Name', 'AffectedBodyPart']
+    required_columns = ['PatientID', 'AffectedBodyPart', 'Injury/Sickness']
     
     if option == 1:
         return patient_df[required_columns]
