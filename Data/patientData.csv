@@ -1,0 +1,93 @@
+PatientID,Name,Age,Severity,AffectedBodyPart,Injury/Sickness
+PID1001,Liam Smith,45,Critical,Heart,Acute Myocardial Infarction
+PID1002,Olivia Johnson,68,Critical,Brain,Ischemic Stroke with right-sided paralysis
+PID1003,Noah Williams,28,Critical,Leg/Skeletal,"Comminuted fracture of the femur, motor vehicle accident"
+PID1004,Emma Brown,34,Severe,Brain,Glioblastoma Multiforme
+PID1005,Oliver Jones,7,Severe,Blood/Marrow,Acute Lymphoblastic Leukemia
+PID1006,Ava Garcia,22,Critical,Skin,"Third-degree burns, 30% body surface area"
+PID1007,Elijah Miller,52,Severe,Kidneys,End-stage Renal Disease requiring transplant
+PID1008,Charlotte Davis,65,Severe,Heart,Severe Aortic Stenosis
+PID1009,William Rodriguez,39,Moderate,Gastrointestinal,Crohn's Disease with fistula
+PID1010,Sophia Martinez,19,Critical,Brain,Traumatic Brain Injury with subdural hematoma
+PID1011,James Hernandez,72,Severe,Pancreas/Abdomen,"Stage IV Pancreatic Cancer, metastatic to liver"
+PID1012,Isabella Lopez,31,Moderate,Central Nervous System,Multiple Sclerosis with acute relapse
+PID1013,Benjamin Gonzalez,6,Severe,Lungs/Respiratory,Cystic Fibrosis exacerbation
+PID1014,Mia Wilson,25,Severe,Eye,Detached Retina
+PID1015,Lucas Anderson,48,Critical,Brain,Ruptured Cerebral Aneurysm
+PID1016,Amelia Thomas,81,Moderate,Joints/Knee,Severe Osteoarthritis requiring total knee replacement
+PID1017,Henry Taylor,55,Severe,Liver,Liver Cirrhosis with ascites
+PID1018,Evelyn Moore,3,Severe,Heart,Tetralogy of Fallot
+PID1019,Theodore Jackson,60,Moderate,Brain,Meningioma requiring surgical resection
+PID1020,Harper White,42,Critical,Leg/Soft Tissue,"Necrotizing Fasciitis, left leg"
+PID1021,Alexander Harris,29,Severe,Spine/Nervous System,Spinal Cord Injury at C4-C5 level
+PID1022,Sofia Martin,58,Moderate,Joints/Systemic,Rheumatoid Arthritis with severe joint deformity
+PID1023,Sebastian Thompson,21,Severe,Brain/Psychiatric,Acute Psychotic Episode
+PID1024,Avery Garcia,75,Severe,Endocrine/Systemic,Untreated Type 2 Diabetes with severe neuropathy
+PID1025,Matthew Martinez,1,Critical,Lungs/Respiratory,"Neonatal Respiratory Distress Syndrome, premature birth"
+PID1026,Emily Robinson,49,Severe,Breast/Systemic,"Metastatic Breast Cancer, bone and lung"
+PID1027,Daniel Clark,63,Chronic/Stable,Nervous System,Amyotrophic Lateral Sclerosis (ALS)
+PID1028,Ella Rodriguez,37,Severe,Systemic/Kidneys,Lupus with nephritis
+PID1029,David Lewis,51,Moderate,Liver,Hepatitis C requiring antiviral therapy
+PID1030,Madison Lee,16,Severe,Psychiatric/Systemic,Severe Anorexia Nervosa with bradycardia
+PID1031,Joseph Walker,66,Critical,Lungs/Vascular,Pulmonary Embolism
+PID1032,Victoria Hall,33,Severe,Peripheral Nervous System,Guillain-Barré Syndrome
+PID1033,Samuel Allen,70,Severe,Prostate,Aggressive Prostate Cancer
+PID1034,Grace Young,24,Moderate,Nervous System/Limb,Complex Regional Pain Syndrome
+PID1035,John Hernandez,54,Critical,Vascular/Aorta,Aortic Dissection
+PID1036,Chloe King,18,Severe,Lymphatic System,Hodgkin's Lymphoma
+PID1037,Ryan Wright,41,Moderate,Joints/Skin,Severe Psoriatic Arthritis
+PID1038,Penelope Scott,8,Severe,Kidneys,Wilms' Tumor (kidney cancer)
+PID1039,Luke Green,47,Chronic/Stable,Brain,Parkinson's Disease with severe tremors
+PID1040,Layla Adams,27,Severe,Heart,Postpartum Cardiomyopathy
+PID1041,Jayden Baker,30,Severe,Skin/Lymphatic,Melanoma with lymph node involvement
+PID1042,Eleanor Nelson,62,Moderate,Eye,Macular Degeneration
+PID1043,Caleb Carter,5,Severe,Vascular/Systemic,Kawasaki Disease
+PID1044,Hannah Mitchell,36,Moderate,Reproductive/Gastro,Endometriosis with bowel involvement
+PID1045,Julian Perez,78,Chronic/Stable,Brain,Alzheimer's Disease with aggressive behavior
+PID1046,Addison Roberts,2,Severe,Spine/Nervous System,Spinal Muscular Atrophy Type 1
+PID1047,Levi Turner,44,Critical,Pancreas,Acute Pancreatitis
+PID1048,Lillian Phillips,69,Severe,Lungs/Respiratory,COPD on continuous oxygen
+PID1049,Isaiah Campbell,23,Severe,Reproductive/Testes,Testicular Cancer
+PID1050,Zoe Parker,35,Critical,Endocrine/Thyroid,Thyroid Storm
+PID1051,Charles Evans,57,Severe,Heart,Heart Failure with reduced ejection fraction
+PID1052,Nora Edwards,19,Critical,Psychiatric,Borderline Personality Disorder with self-harm
+PID1053,Josiah Collins,61,Moderate,Gastrointestinal/Colon,"Colon Cancer, requiring colostomy"
+PID1054,Stella Stewart,40,Chronic/Stable,Musculoskeletal/Systemic,Fibromyalgia with debilitating fatigue
+PID1055,Ezekiel Sanchez,26,Severe,Immune System,HIV/AIDS with opportunistic infection
+PID1056,Audrey Morris,53,Moderate,Nerves/Face,"Trigeminal Neuralgia, medication-resistant"
+PID1057,Adrian Rogers,4,Severe,Brain/Muscular,Cerebral Palsy with spastic quadriplegia
+PID1058,Allison Reed,32,Critical,Reproductive/Uterus,Placenta Accreta requiring hysterectomy
+PID1059,Jeremiah Cook,74,Moderate,Joints,Gout with tophaceous deposits
+PID1060,Katherine Morgan,20,Severe,Gastrointestinal/Colon,Ulcerative Colitis
+PID1061,Thomas Bell,50,Chronic/Stable,Brain/Genetic,Huntington's Disease
+PID1062,Gabriella Murphy,12,Moderate,Spine/Skeletal,Scoliosis with 60-degree curve
+PID1063,Connor Bailey,38,Severe,Blood/Marrow,Aplastic Anemia
+PID1064,Anna Rivera,67,Severe,Vascular/Limbs,Peripheral Artery Disease with critical limb ischemia
+PID1065,Dominic Cooper,29,Moderate,Psychiatric,Obsessive-Compulsive Disorder
+PID1066,Samantha Richardson,46,Severe,Reproductive/Ovaries,Ovarian Cancer
+PID1067,Miles Cox,56,Critical,Neuromuscular,Myasthenia Gravis crisis
+PID1068,Sarah Howard,33,Moderate,Systemic/Genetic,Von Hippel-Lindau disease
+PID1069,Robert Ward,71,Moderate,Bladder/Urinary,Bladder Cancer requiring cystectomy
+PID1070,Claire Torres,17,Severe,Brain,Epilepsy with frequent tonic-clonic seizures
+PID1071,Jordan Peterson,43,Moderate,Endocrine/Adrenal,Addison's Disease
+PID1072,Paisley Gray,64,Severe,Blood/Marrow,Multiple Myeloma
+PID1073,Carson James,22,Severe,Psychiatric,Schizophrenia
+PID1074,Alexa Watson,30,Severe,Lungs/Respiratory,Pulmonary Fibrosis
+PID1075,Xavier Brooks,59,Severe,Esophagus/Gastro,Esophageal Cancer
+PID1076,Taylor Kelly,27,Moderate,Endocrine/Reproductive,Polycystic Ovary Syndrome (PCOS) with severe insulin resistance
+PID1077,Leo Sanders,76,Chronic/Stable,Brain,Vascular Dementia
+PID1078,Eva Price,2,Severe,Eye,Retinoblastoma
+PID1079,Bentley Bennett,49,Moderate,Spine/Joints,Ankylosing Spondylitis
+PID1080,Ariana Wood,34,Severe,Skin/Systemic,Scleroderma with lung involvement
+PID1081,Jaxson Barnes,68,Severe,Heart,Atrial Fibrillation with stroke history
+PID1082,Jasmine Ross,31,Critical,Blood/Systemic,Sickle Cell Anemia with acute chest syndrome
+PID1083,Lincoln Henderson,14,Severe,Bone/Skeletal,Ewing's Sarcoma
+PID1084,Aaliyah Coleman,21,Severe,Vascular/Systemic,Systemic Vasculitis
+PID1085,Hudson Jenkins,53,Severe,Brain,Brainstem Glioma
+PID1086,Genesis Perry,39,Moderate,Endocrine/Adrenal,Cushing's Syndrome
+PID1087,Wyatt Powell,60,Severe,Endocrine/Thyroid,Grave's Disease with ophthalmopathy
+PID1088,Aubrey Long,26,Severe,Liver,Drug-induced liver injury
+PID1089,Elias Patterson,73,Chronic/Stable,Brain,Lewy Body Dementia
+PID1090,Madelyn Hughes,42,Critical,Brain/Vascular,Brain AVM (Arteriovenous Malformation)
+PID1091,Declan Flores,25,Severe,Psychiatric/Systemic,Opioid Use Disorder requiring inpatient detox
+PID1092,Mackenzie Washington,51,Moderate,Lungs/Systemic,Sarcoidosis

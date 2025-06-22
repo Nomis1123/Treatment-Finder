@@ -1,0 +1,15 @@
+name,emergency care,specialized,busy
+Toronto General Hospital,y,"cardiac care, organ transplants, complex patient needs",10
+Toronto Western Hospital,y,"musculoskeletal health, arthritis, neuroscience",9
+Mount Sinai Hospital,y,"urgent care, life-threatening conditions, women's health, infants' health",9
+Hennick Bridgepoint Hospital,n,"complex continuing care, rehabilitation, therapeutic recreation, ophthalmology",6
+St. Michael's Hospital,y,"trauma, neurosurgery, cardiac care, cardiovascular care, multiple sclerosis",10
+St. Joseph's Health Centre,y,"emergency, surgical, mental health care",8
+North York General Hospital,y,"emergency, medical, surgical, family medicine, community medicine",9
+Michael Garron Hospital,y,general services for East Toronto,9
+Sunnybrook Health Sciences Centre,y,"trauma, cancer care, heart and stroke care, high-risk pregnancies, orthopaedics",10
+The Hospital for Sick Children (SickKids),y,"pediatric care, pediatric research, childhood illnesses",9
+Humber River Hospital,y,"digital hospital, cancer care, cardiac care, surgery",8
+Centre for Addiction and Mental Health (CAMH),y,"psychiatric emergencies, mental illness, addictions",7
+Women's College Hospital,n,"ambulatory care, women's health, research",5
+Baycrest Health Sciences,n,"geriatric care, brain health, aging",4
