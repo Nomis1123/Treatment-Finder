@@ -1,6 +1,7 @@
 import os
 import google.generativeai as genai
 from dotenv import load_dotenv
+import TreatmentFinder.matching_engine as ds
 
 
 def setup_gemini():
@@ -38,9 +39,6 @@ def generate_text(prompt: str, model_name: str = "gemini-2.5-flash") -> str | No
     try:
         model = genai.GenerativeModel(model_name)
         response = model.generate_content(prompt)
-        
-        # You can also inspect response.prompt_feedback for safety ratings
-        # print(response.prompt_feedback)
 
         return response.text
     except Exception as e:
@@ -67,3 +65,5 @@ if __name__ == "__main__":
         print(generated_response)
     else:
         print("Failed to get a response from Gemini.")
+        
+    
