@@ -17,6 +17,7 @@ severity_map = {
     'chronic/stable': 'Chronic'
 }
 
+
 # Load the patient and hospital data from CSV files
 file_path_patient = "./Data/patientData.csv"
 file_path_hospital = "./Data/hospitalData.csv"
@@ -24,7 +25,6 @@ file_path_hospital = "./Data/hospitalData.csv"
 patient_df = pd.read_csv(file_path_patient)
 temp_df = pd.read_csv(file_path_patient)
 hospital_df = pd.read_csv(file_path_hospital)
-print(patient_df['Severity'].value_counts())
 
 
 def standardize_severity(raw_severity: str) -> str:
@@ -39,7 +39,6 @@ def standardize_severity(raw_severity: str) -> str:
 # Standardize the 'Severity' column in the patient DataFrame
 temp_df['Severity'] = temp_df['Severity'].apply(standardize_severity)
 simple_patient_df = temp_df[['PatientID', 'AffectedBodyPart', 'Injury/Sickness', 'Severity']]
-print(simple_patient_df['Severity'].value_counts())
 
 
 def get_original_data(option: int) -> pd.DataFrame:

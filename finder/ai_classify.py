@@ -46,27 +46,3 @@ def generate_text(prompt: str, model_name: str = "gemini-2.5-flash") -> str | No
         print(f"An error occurred while generating text: {e}")
         return None
     
-    
-    
-    
-
-    
-if __name__ == "__main__":
-    
-    # First, set up the API connection
-    setup_gemini()
-
-    # Now, define the prompt you want to use
-    my_prompt = "Explain the concept of 'dark matter' to a 10-year-old."
-
-    # Call the function to get the response
-    generated_response = generate_text(my_prompt)
-
-    # Always check if the response is valid before using it
-    if generated_response:
-        print("Gemini's Response:")
-        print(generated_response)
-    else:
-        print("Failed to get a response from Gemini.")
-        
-    
