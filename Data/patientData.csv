@@ -91,3 +91,84 @@ PID1089,Elias Patterson,73,Chronic/Stable,Brain,Lewy Body Dementia
 PID1090,Madelyn Hughes,42,Critical,Brain/Vascular,Brain AVM (Arteriovenous Malformation)
 PID1091,Declan Flores,25,Severe,Psychiatric/Systemic,Opioid Use Disorder requiring inpatient detox
 PID1092,Mackenzie Washington,51,Moderate,Lungs/Systemic,Sarcoidosis
+PatientID,Name,Age,Severity,AffectedBodyPart,Injury/Sickness
+PID1093,Mason Roberts,68,Severe,Lungs/Respiratory,Acute exacerbation of Idiopathic Pulmonary Fibrosis
+PID1094,Aria Kim,31,Critical,Vascular/Brain,Subarachnoid Hemorrhage from a fall
+PID1095,Ethan Thompson,29,Moderate,Joints/Shoulder,Dislocated shoulder from sports injury
+PID1096,Harper Lee,5,Low,Skin/Extremity,Minor laceration on knee requiring stitches
+PID1097,Logan Garcia,45,Severe,Gastrointestinal/Liver,"Alcoholic Hepatitis, acute on chronic"
+PID1098,Mila Nguyen,22,Moderate,Psychiatric,Generalized Anxiety Disorder with panic attacks
+PID1099,Lucas Rodriguez,72,Chronic/Stable,Brain,Post-stroke cognitive impairment
+PID1100,Charlotte Chen,18,Severe,Immune System,Systemic Lupus Erythematosus (SLE) flare
+PID1101,Caden Patel,50,Critical,Heart,Ventricular Tachycardia storm
+PID1102,Riley Davis,3,Low,Lungs/Respiratory,Common cold with mild cough
+PID1103,Aiden Martinez,64,Moderate,Endocrine/Systemic,Type 2 Diabetes, poorly controlled
+PID1104,Evelyn Wright,81,Severe,Bone/Hip,Hip fracture after a fall at home
+PID1105,Jackson Lewis,35,Critical,Systemic/Blood,Septic shock secondary to pneumonia
+PID1106,Abigail Hill,27,Moderate,Reproductive/Systemic,Polycystic Ovary Syndrome (PCOS) with metabolic syndrome
+PID1107,James Scott,59,Severe,Kidneys/Vascular,Renal artery stenosis
+PID1108,Sofia Green,8,Moderate,Gastrointestinal,Gastroenteritis with dehydration
+PID1109,Benjamin Adams,41,Severe,Skin/Systemic,Severe psoriasis covering 20% of body
+PID1110,Avery Baker,76,Chronic/Stable,Joints/Systemic,Gout, well-managed on medication
+PID1111,Ella Nelson,33,Critical,Reproductive/Pregnancy,Ectopic pregnancy with rupture
+PID1112,Carter Carter,6,Low,Head/Ear,Bilateral Otitis Media (ear infection)
+PID1113,Scarlett Mitchell,28,Moderate,Spine/Back,Herniated lumbar disc L4-L5
+PID1114,Henry Perez,55,Severe,Heart,Unstable Angina
+PID1115,Madison Roberts,19,Moderate,Psychiatric,Bipolar II Disorder, depressive episode
+PID1116,William Turner,48,Severe,Nervous System,Guillain-Barré Syndrome with ascending paralysis
+PID1117,Chloe Phillips,62,Chronic/Stable,Lungs/Respiratory,Asthma, controlled with inhalers
+PID1118,Owen Campbell,2,Severe,Brain/Systemic,Febrile seizure, prolonged
+PID1119,Grace Parker,39,Moderate,Head/Sinus,Chronic Sinusitis requiring surgical evaluation
+PID1120,Leo Evans,70,Severe,Prostate/Urinary,Benign Prostatic Hyperplasia with acute urinary retention
+PID1121,Zoey Edwards,25,Low,Joints/Ankle,Mild ankle sprain
+PID1122,Jack Collins,53,Critical,Gastrointestinal/Esophagus,Esophageal varices with active bleeding
+PID1123,Hannah Stewart,44,Severe,Breast/Systemic,Inflammatory Breast Cancer
+PID1124,Luke Sanchez,30,Moderate,Skin/Face,Severe acne with scarring
+PID1125,Nora Morris,67,Severe,Eye,Acute angle-closure glaucoma
+PID1126,Julian Rogers,1,Critical,Heart/Congenital,Transposition of the Great Arteries
+PID1127,Lily Reed,23,Low,Head,Tension headache
+PID1128,David Cook,78,Chronic/Stable,Vascular/Legs,Chronic Venous Insufficiency
+PID1129,Leah Morgan,36,Severe,Reproductive/Uterus,Uterine fibroids causing severe anemia
+PID1130,Christopher Bell,51,Moderate,Liver,Non-alcoholic fatty liver disease (NAFLD)
+PID1131,Addison Murphy,16,Severe,Psychiatric/Systemic,Bulimia Nervosa with electrolyte imbalance
+PID1132,Gabriel Bailey,49,Critical,Lungs/Vascular,Massive Saddle Pulmonary Embolism
+PID1133,Natalie Rivera,29,Moderate,Immune System/Joints,Reactive Arthritis
+PID1134,Isaac Cooper,75,Severe,Brain,Delirium secondary to a urinary tract infection
+PID1135,Victoria Richardson,4,Low,Gastrointestinal,Constipation
+PID1136,Anthony Cox,61,Chronic/Stable,Endocrine/Systemic,Well-controlled Type 1 Diabetes
+PID1137,Penelope Howard,26,Severe,Blood/Systemic,Idiopathic Thrombocytopenic Purpura (ITP)
+PID1138,Joshua Ward,58,Moderate,Joints/Hand,Carpal Tunnel Syndrome, severe
+PID1139,Audrey Torres,42,Severe,Kidneys,Polycystic Kidney Disease with cyst rupture
+PID1140,Andrew Peterson,32,Critical,Spine/Nervous System,Cauda Equina Syndrome
+PID1141,Claire James,15,Moderate,Spine/Skeletal,Adolescent Idiopathic Scoliosis
+PID1142,Mateo Watson,80,Chronic/Stable,Brain/Nervous System,Essential Tremor
+PID1143,Caroline Brooks,24,Moderate,Skin,Eczema flare-up
+PID1144,Levi Kelly,47,Severe,Heart,Pericarditis with cardiac tamponade physiology
+PID1145,Anna Sanders,69,Severe,Bone/Systemic,Osteoporosis with vertebral compression fracture
+PID1146,Jaxon Price,21,Low,Musculoskeletal/Back,Minor back strain from lifting
+PID1147,Maya Bennett,38,Critical,Immune System/Nervous,Myasthenic Crisis
+PID1148,John Wood,54,Moderate,Gastrointestinal/Pancreas,Chronic pancreatitis
+PID1149,Bella Barnes,7,Severe,Brain/Genetic,Rett Syndrome
+PID1150,Lincoln Ross,34,Moderate,Psychiatric,Obsessive-Compulsive Disorder (OCD)
+PID1151,Genesis Henderson,28,Severe,Systemic/Vascular,Raynaud's phenomenon with digital ulcers
+PID1152,Eva Coleman,66,Critical,Colon/Gastrointestinal,Bowel obstruction from colon cancer
+PID1153,Asher Jenkins,19,Low,Skin/Face,Allergic reaction to peanuts with mild hives
+PID1154,Madeline Perry,43,Severe,Liver,Autoimmune Hepatitis
+PID1155,Ezra Powell,63,Chronic/Stable,Lungs/Respiratory,Sleep Apnea requiring CPAP
+PID1156,Naomi Long,30,Moderate,Nervous System/Limb,Meralgia Paresthetica
+PID1157,Josiah Patterson,77,Severe,Vascular/Brain,Transient Ischemic Attack (TIA)
+PID1158,Stella Hughes,2,Critical,Lungs/Respiratory,Respiratory Syncytial Virus (RSV) with apnea
+PID1159,Aaron Flores,46,Moderate,Joints/Foot,Plantar Fasciitis
+PID1160,Eliana Washington,37,Severe,Blood/Marrow,Sickle Cell Vaso-occlusive Crisis
+PID1161,Maverick Diaz,26,Low,Throat,Streptococcal Pharyngitis (Strep Throat)
+PID1162,Alice Bryant,57,Chronic/Stable,Nervous System/Systemic,Fibromyalgia
+PID1163,Robert Foster,82,Critical,Systemic,Failure to thrive with dehydration
+PID1164,Cora Gonzales,35,Moderate,Eye,Uveitis
+PID1165,Miles Butler,60,Severe,Bladder/Urinary,Bladder cancer invading muscle wall
+PID1166,Lucy Simmons,20,Severe,Psychiatric,First-episode psychosis
+PID1167,Kai Russell,14,Moderate,Bone/Growth Plate,Slipped Capital Femoral Epiphysis (SCFE)
+PID1168,Clara Griffin,74,Severe,Heart/Valves,Infective Endocarditis
+PID1169,Brooks Hayes,40,Low,Gastrointestinal,Irritable Bowel Syndrome (IBS) flare
+PID1170,Sadie Hamilton,3,Critical,Brain/Infection,Bacterial Meningitis
+PID1171,Christian Murray,29,Moderate,Testes/Reproductive,Testicular Torsion
+PID1172,Julia Jordan,56,Chronic/Stable,Skin,Rosacea
