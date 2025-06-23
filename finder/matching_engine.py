@@ -1,10 +1,6 @@
 import os
 import pandas as pd
-import google.generativeai as genai
-from dotenv import load_dotenv
 
-pd.set_option('display.max_columns', None)
-pd.set_option('display.width', 1000)
 
 severity_map = {
     'critical': 'High',
@@ -21,6 +17,7 @@ severity_map = {
     'chronic/stable': 'Chronic'
 }
 
+# Load the patient and hospital data from CSV files
 file_path_patient = "./Data/patientData.csv"
 file_path_hospital = "./Data/hospitalData.csv"
 
