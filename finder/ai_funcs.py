@@ -1,7 +1,7 @@
 import os
 import google.generativeai as genai
 from dotenv import load_dotenv
-import matching_engine as me
+from . import matching_engine as me
 
 
 def setup_gemini():

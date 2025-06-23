@@ -2,9 +2,10 @@
 import pandas as pd
 import spacy
 import json
-import time
-from ai_funcs import setup_gemini, generate_text
-import matching_engine as me
+import time     
+from . import ai_funcs as ac
+from . import matching_engine as me
+
 
 
 SPACY_SPECIALTY_MAP = {
@@ -33,7 +34,7 @@ except OSError:
 
 # Gemini setup
 try:
-    setup_gemini()
+    ac.setup_gemini()
 except ValueError as e:
     print(e)
     exit()
@@ -44,6 +45,7 @@ and return ONLY a valid JSON object with the key "medical_specialty".
 
 Patient Injury Description: '{injury_description}'
 """
+
 
 def get_specialty_spacy(description: str) -> str | None:
     """
@@ -72,5 +74,7 @@ def get_specialty_spacy(description: str) -> str | None:
                 return specialty
             
     return None
+
+
     
         
