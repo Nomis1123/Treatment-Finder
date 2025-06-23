@@ -1,5 +1,5 @@
 from finder import matching_engine as me
-from finder import ai_classify as ac
+from finder import ai_funcs as ac
 
 
 print('\n')

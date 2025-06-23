@@ -42,7 +42,6 @@ def generate_text(prompt: str, model_name: str = "gemini-2.5-flash") -> str | No
 
         return response.text
     except Exception as e:
-        # This will catch errors during the API call, like network issues or bad requests
         print(f"An error occurred while generating text: {e}")
         return None
     
