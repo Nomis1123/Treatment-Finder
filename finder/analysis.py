@@ -92,7 +92,7 @@ def get_specialty_gemini(description: str) -> str | None:
     
     if response:
         try:
-            return response.strip().lower()
+            return response.strip()
         except json.JSONDecodeError:
             return "gemini-ParseError"
     
