@@ -38,7 +38,6 @@ class SpecialtyAnalyzer:
         Patient Injury Description: '{injury_description}'
         """
     
-    
 
     def __init__(self, ai_client):
         self.nlp = spacy.load("en_core_web_sm")
@@ -70,7 +69,6 @@ class SpecialtyAnalyzer:
                 return "General/Minor Care"
         
         
-        
     def __get_specialty_spacy(self, description: str) -> str | None:
         """
         Uses spaCy to analyze the injury description and return the most relevant medical specialty.
@@ -100,7 +98,6 @@ class SpecialtyAnalyzer:
         return None
 
     
-
     def __get_specialty_gemini(self, description: str) -> str | None:
         """
         Uses Gemini to analyze the injury description and return the most relevant medical specialty.
@@ -119,6 +116,3 @@ class SpecialtyAnalyzer:
                 return response.strip()
         else:
             return "Gemini-API-Error"
-
-
-        
