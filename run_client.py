@@ -18,7 +18,6 @@ print('\n')
 print('\n')
 print('\n')
 '''
-
 symp_list = ['Febrile seizure', "Bulimia Nervosa with electrolyte imbalance", "Acute appendicitis with peritonitis"]
 ret_list = []
 for item in symp_list:
