@@ -41,7 +41,8 @@ except ValueError as e:
     
 GEMINI_JSON_PROMPT = """
 You are an expert medical data processor. Analyze the patient's injury description
-and return ONLY a valid JSON object with the key "medical_specialty".
+and return ONLY a valid string with the most relevant medical specialty.
+If the description does not match any specific specialty, return 'General/Minor Care'.
 
 Patient Injury Description: '{injury_description}'
 """
@@ -75,6 +76,50 @@ def get_specialty_spacy(description: str) -> str | None:
             
     return None
 
+def get_specialty_gemini(description: str) -> str | None:
+    """
+    Uses Gemini to analyze the injury description and return the most relevant medical specialty.
+    
+    Args:
+        injury_description (str): The description of the patient's injury.
+        
+    Returns:
+        str: The identified medical specialty or 'General/Minor Care' if no match is found.
+    """
+    prompt = GEMINI_JSON_PROMPT.format(injury_description=description)
+    
+    response = ac.generate_text(prompt, model_name="gemini-2.5-flash")
+    
+    if response:
+        try:
+            return response.strip().lower()
+        except json.JSONDecodeError:
+            return "gemini-ParseError"
+    
+    return "Gemini-API-Error"
 
+def get_specialty(description: str) -> str | None:
+    """
+    Determines the medical specialty for a given injury description using spaCy or Gemini.
+    
+    Args:
+        description (str): The description of the patient's injury.
+        
+    Returns:
+        str: The identified medical specialty or 'General/Minor Care' if no match is found.
+    """
+    specialty  = get_specialty_spacy(description)
+    
+    if specialty:
+        return specialty
+    else:        
+        print("spaCy did not find a match, trying Gemini...")
+        time.sleep(1)  # Adding a delay to avoid hitting API rate limits
+        specialty = get_specialty_gemini(description)
+        if specialty:
+            return specialty
+        else:
+            print("Gemini did not find a match, returning 'General/Minor Care'")
+            return "General/Minor Care"
     
         

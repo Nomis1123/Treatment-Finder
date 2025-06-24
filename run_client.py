@@ -19,5 +19,10 @@ print('\n')
 print('\n')
 '''
 
-print(an.get_specialty_spacy("Wilms' Tumor (kidney cancer)"))
+symp_list = ['Febrile seizure', "Bulimia Nervosa with electrolyte imbalance", "Acute appendicitis with peritonitis"]
+ret_list = []
+for item in symp_list:
+    ret_list.append(an.get_specialty(item))
 
+print('\n')
+print(ret_list)
