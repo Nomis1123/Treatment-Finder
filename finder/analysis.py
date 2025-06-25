@@ -53,20 +53,67 @@ class SpecialtyAnalyzer:
     VALID_SPECIALTIES_STR = ", ".join(VALID_SPECIALTIES_LIST)
 
     SPACY_SPECIALTY_MAP = {
-    'Cardiology': ['heart', 'cardio', 'aorta', 'infarction', 'angina', 'stenosis', 'fibrillation', 'embolism', 'pericarditis'],
-    'Neurology': ['brain', 'neuro', 'stroke', 'aneurysm', 'seizure', 'epilepsy', 'als', "parkinson's", 'dementia', 'meningioma', 'hematoma', 'neuralgia'],
-    'Orthopedics': ['fracture', 'osteoarthritis', 'joint', 'bone', 'skeletal', 'scoliosis', 'sprain', 'disc', 'dislocated', 'hip'],
-    'Oncology': ['cancer', 'tumor', 'leukemia', 'lymphoma', 'melanoma', 'sarcoma', 'glioblastoma', 'myeloma'],
-    'Gastroenterology': ['gastro', 'crohn', 'colitis', 'liver', 'hepatitis', 'pancreas', 'bowel', 'esophageal', 'ulcerative'],
-    'Nephrology/Urology': ['kidney', 'renal', 'nephritis', 'bladder', 'prostate'],
-    'Pulmonology': ['lungs', 'respiratory', 'pulmonary', 'copd', 'asthma', 'fibrosis', 'pneumonia'],
-    'Dermatology': ['skin', 'burn', 'psoriasis', 'dermatitis', 'eczema', 'acne'],
-    'Psychiatry': ['psychiatric', 'psychosis', 'schizophrenia', 'anorexia', 'bulimia', 'bipolar', 'anxiety', 'ocd'],
-    'Rheumatology/Immunology': ['arthritis', 'lupus', 'scleroderma', 'vasculitis', 'immune', 'fibromyalgia'],
-    'Endocrinology': ['endocrine', 'diabetes', 'thyroid', 'adrenal'],
-    'Gynecology/Reproductive': ['reproductive', 'uterus', 'ovaries', 'pcos', 'endometriosis', 'pregnancy'],
-    'Ophthalmology': ['eye', 'retina', 'macular', 'glaucoma'],
-    'General/Minor Care': ['headache', 'cold', 'constipation', 'gout', 'strain']
+        # --- Broad, High-Level Categories ---
+        'Cardiology': [
+            'heart', 'cardiac', 'cardio', 'aorta', 'infarction', 'angina', 
+            'stenosis', 'fibrillation', 'embolism', 'pericarditis', 'cardiomyopathy'
+        ],
+        'Neurology': [
+            'brain', 'neuro', 'stroke', 'aneurysm', 'seizure', 'epilepsy', 'als', 
+            "parkinson's", 'dementia', 'meningioma', 'hematoma', 'neuralgia', 
+            'sclerosis', 'myasthenia', 'guillain-barré', 'palsy', 'avm'
+        ],
+        'Oncology': [
+            'cancer', 'tumor', 'leukemia', 'lymphoma', 'melanoma', 'sarcoma', 
+            'glioblastoma', 'myeloma', 'metastatic', 'hodgkin', 'wilms', 'carcinoma'
+        ],
+        'Orthopedics': [
+            'fracture', 'osteoarthritis', 'joint', 'bone', 'skeletal', 'scoliosis', 
+            'sprain', 'disc', 'dislocated', 'hip', 'knee', 'shoulder'
+        ],
+        'Gastroenterology': [
+            'gastro', 'crohn', 'colitis', 'liver', 'hepatitis', 'pancreas', 
+            'bowel', 'esophageal', 'ulcerative', 'pancreatitis'
+        ],
+        'Pulmonology': [
+            'lungs', 'respiratory', 'pulmonary', 'copd', 'asthma', 'fibrosis', 
+            'pneumonia', 'sarcoidosis'
+        ],
+        'Nephrology/Urology': [
+            'kidney', 'renal', 'nephritis', 'bladder', 'prostate', 'testicular',
+            'cystectomy'
+        ],
+        'Psychiatry': [
+            'psychiatric', 'psychosis', 'schizophrenia', 'anorexia', 'bulimia', 
+            'bipolar', 'anxiety', 'ocd', 'disorder', 'addiction'
+        ],
+        'Rheumatology/Immunology': [
+            'arthritis', 'lupus', 'scleroderma', 'vasculitis', 'immune', 
+            'fibromyalgia', 'spondylitis', 'aids'
+        ],
+        'Endocrinology': [
+            'endocrine', 'diabetes', 'thyroid', 'adrenal', 'cushing', 'addison'
+        ],
+        
+        # --- More Specific & Surgical Categories ---
+        'Trauma/Critical Care': ['trauma', 'shock', 'septic'],
+        'General Surgery': ['surgery', 'fasciitis', 'colostomy'],
+        'Vascular Surgery': ['vascular', 'artery'],
+        'Plastic Surgery': ['burn', 'burns'],
+        'Infectious Disease': ['infection', 'hiv'],
+        
+        # --- Population-Specific & Other ---
+        'Women\'s Health/Gynecology': [
+            'reproductive', 'uterus', 'ovaries', 'pcos', 'endometriosis', 
+            'pregnancy', 'postpartum', 'placenta', 'obstetrics'
+        ],
+        'Ophthalmology': ['eye', 'retina', 'macular', 'glaucoma', 'retinoblastoma', 'ophthalmopathy'],
+        'Dermatology': ['skin', 'psoriasis', 'dermatitis', 'eczema', 'acne'],
+        'Pain Management': ['pain'],
+        'Rehabilitation': ['rehabilitation'],
+        'Pediatrics': ['pediatric', 'kawasaki', 'neonatal'],
+        'Genetics': ['genetic', 'von hippel-lindau', 'huntington'],
+        'General/Minor Care': ['headache', 'cold', 'constipation', 'gout', 'strain', 'laceration']
     }
     
     GEMINI_JSON_PROMPT = """
