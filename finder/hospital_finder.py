@@ -31,7 +31,10 @@ class HospitalFinder:
         Args:
             hospital_file (str): Path to the hospital data CSV file.
         """
-        self.hospital_df = pd.read_csv(hospital_file)
+        try:
+            self.hospital_df = pd.read_csv(hospital_file)
+        except FileNotFoundError:
+            raise FileNotFoundError(f"Hospital data file '{hospital_file}' not found.")
         
     def get_hospital_data(self) -> pd.DataFrame:
         """
@@ -42,7 +45,7 @@ class HospitalFinder:
         """
         return self.hospital_df
     
-    def get_hospital_by_specialty(self, specialty: str) -> list | None:
+    def get_hospital_by_specialty(self, specialty: str) -> list[str] | None:
         """
         Filters the hospital data by a specific medical specialty.
         
@@ -63,7 +66,25 @@ class HospitalFinder:
             return None
         
         return matching_hospitals
-        
-        
-        
+    
+    def sort_hospitals_by_busyness(self, hospital_list: list[str]) -> list[str]:
+            """
+            Takes a list of hospital names and sorts them from least busy to most busy.
+            
+            Args:
+                hospital_list (list[str]): A list of hospital names to be sorted.
+
+            Returns:
+                A sorted list of hospital names.
+            """
+            if self.hospitals_df.empty or not hospital_list:
+                return hospital_list 
+
+            filtered_df = self.hospitals_df[self.hospitals_df['name'].isin(hospital_list)]
+            
+            sorted_df = filtered_df.sort_values(by='busy', ascending=True)
+            return sorted_df['name'].tolist()
+            
+            
+            
         
