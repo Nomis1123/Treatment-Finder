@@ -42,7 +42,7 @@ class HospitalFinder:
         """
         return self.hospital_df
     
-    def get_hospital_by_specialty(self, specialty: str) -> pd.DataFrame:
+    def get_hospital_by_specialty(self, specialty: str) -> list | None:
         """
         Filters the hospital data by a specific medical specialty.
         
@@ -50,8 +50,20 @@ class HospitalFinder:
             specialty (str): The medical specialty to filter by.
             
         Returns:
-            pd.DataFrame: A DataFrame containing hospitals that match the specialty.
+            list: A list containing hospitals that match the specialty.
+            None: If no hospitals match the specialty.
         """
+        matching_hospitals = []
+        
+        for hospital, specialties in self.HOSPITAL_TO_SPECIALTIES_MAP.items():
+            if specialty in specialties:
+                matching_hospitals.append(hospital)
+                
+        if not matching_hospitals:
+            return None
+        
+        return matching_hospitals
+        
         
         
         
