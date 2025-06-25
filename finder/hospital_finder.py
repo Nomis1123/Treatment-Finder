@@ -7,21 +7,56 @@ class HospitalFinder:
     """
     
     HOSPITAL_TO_SPECIALTIES_MAP = {
-    'Toronto General Hospital':        ['Cardiology', 'Trauma/Critical Care', 'Gastroenterology', 'Nephrology/Urology', 'Pulmonology', 'Oncology', 'General Surgery', 'Infectious Disease'],
-    'Toronto Western Hospital':        ['Neurology', 'Orthopedics', 'Rheumatology/Immunology', 'Pain Management'],
-    'Mount Sinai Hospital':            ['Gastroenterology', 'Rheumatology/Immunology', 'Endocrinology', 'Pediatrics', 'Women\'s Health/Gynecology', 'Oncology', 'Infectious Disease'],
-    'Hennick Bridgepoint Hospital':    ['Rehabilitation', 'Geriatrics', 'Ophthalmology'],
-    'St. Michael\'s Hospital':          ['Cardiology', 'Neurology', 'Trauma/Critical Care', 'Nephrology/Urology', 'Orthopedics', 'General Surgery', 'Plastic Surgery', 'Vascular Surgery'],
-    'St. Joseph\'s Health Centre':     ['Orthopedics', 'Psychiatry', 'General/Minor Care', 'Pulmonology', 'General Surgery'],
-    'North York General Hospital':     ['Gastroenterology', 'General/Minor Care', 'Orthopedics', 'General Surgery'],
-    'Michael Garron Hospital':         ['Pulmonology', 'General/Minor Care', 'Orthopedics', 'General Surgery'],
-    'Sunnybrook Health Sciences Centre': ['Cardiology', 'Neurology', 'Oncology', 'Orthopedics', 'Trauma/Critical Care', 'Women\'s Health/Gynecology', 'Psychiatry', 'Plastic Surgery', 'Vascular Surgery', 'Infectious Disease'],
-    'The Hospital for Sick Children (SickKids)': ['Pediatrics', 'Cardiology', 'Neurology', 'Oncology', 'Orthopedics', 'Gastroenterology', 'Genetics'],
-    'Humber River Hospital':           ['Cardiology', 'Oncology', 'General/Minor Care', 'Nephrology/Urology'],
-    'Centre for Addiction and Mental Health (CAMH)': ['Psychiatry'],
-    'Women\'s College Hospital':        ['Endocrinology', 'Women\'s Health/Gynecology', 'Dermatology', 'Rheumatology/Immunology', 'Pain Management'],
-    'Baycrest Health Sciences':        ['Rehabilitation', 'Geriatrics', 'Neurology']
-}
+        'Toronto General Hospital': [
+            'Cardiology', 'Trauma/Critical Care', 'Gastroenterology', 'Nephrology/Urology', 
+            'Pulmonology', 'Oncology', 'General Surgery', 'Infectious Disease', 'Vascular Surgery' 
+        ],
+        'Toronto Western Hospital': [
+            'Neurology', 'Orthopedics', 'Rheumatology/Immunology', 'Pain Management' 
+        ],
+        'Mount Sinai Hospital': [
+            'Gastroenterology', 'Rheumatology/Immunology', 'Endocrinology', 'Pediatrics', 
+            'Women\'s Health/Gynecology', 'Oncology', 'Infectious Disease', 'Genetics' 
+        ],
+        'Hennick Bridgepoint Hospital': [
+            'Rehabilitation', 'Geriatrics', 'Ophthalmology'
+        ],
+        'St. Michael\'s Hospital': [
+            'Cardiology', 'Neurology', 'Trauma/Critical Care', 'Nephrology/Urology', 
+            'Orthopedics', 'General Surgery', 'Plastic Surgery', 'Vascular Surgery' 
+        ],
+        'St. Joseph\'s Health Centre': [
+            'Orthopedics', 'Psychiatry', 'General/Minor Care', 'Pulmonology', 'General Surgery' 
+        ],
+        'North York General Hospital': [
+            'Gastroenterology', 'General/Minor Care', 'Orthopedics', 'General Surgery', 'Women\'s Health/Gynecology' 
+        ],
+        'Michael Garron Hospital': [
+            'Pulmonology', 'General/Minor Care', 'Orthopedics', 'General Surgery' ## NEW
+        ],
+        'Sunnybrook Health Sciences Centre': [
+            'Cardiology', 'Neurology', 'Oncology', 'Orthopedics', 'Trauma/Critical Care', 
+            'Women\'s Health/Gynecology', 'Psychiatry', 'Plastic Surgery', 'Vascular Surgery', ## NEW
+            'Infectious Disease', 'Dermatology' ## NEW
+        ],
+        'The Hospital for Sick Children (SickKids)': [
+            'Pediatrics', 'Cardiology', 'Neurology', 'Oncology', 'Orthopedics', 
+            'Gastroenterology', 'Genetics', 'Rheumatology/Immunology' ## NEW
+        ],
+        'Humber River Hospital': [
+            'Cardiology', 'Oncology', 'General/Minor Care', 'Nephrology/Urology', 'General Surgery' ## NEW
+        ],
+        'Centre for Addiction and Mental Health (CAMH)': [
+            'Psychiatry'
+        ],
+        'Women\'s College Hospital': [
+            'Endocrinology', 'Women\'s Health/Gynecology', 'Dermatology', 
+            'Rheumatology/Immunology', 'Pain Management' ## NEW
+        ],
+        'Baycrest Health Sciences': [
+            'Rehabilitation', 'Geriatrics', 'Neurology'
+        ]
+    }
     
 
     def __init__(self, hospital_file: str):
