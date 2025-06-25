@@ -50,7 +50,7 @@ class SpecialtyAnalyzer:
     ]
     
     # The rest of the class remains the same...
-    VALID_SPECIALTIES_STR = ", ".join(VALID_SPECIALTIES_LIST)
+    VALID_SPECIALTIES_STR = str(VALID_SPECIALTIES_LIST)
 
     SPACY_SPECIALTY_MAP = {
         # --- Broad, High-Level Categories ---
@@ -126,7 +126,7 @@ class SpecialtyAnalyzer:
         3. Your response MUST be ONLY the name of the chosen specialty and nothing else.
 
         **Approved Specialties:**
-        {VALID_SPECIALTIES_STR}
+        {valid_specs}
 
         **Patient Injury Description:**
         '{injury_description}'
@@ -202,7 +202,7 @@ class SpecialtyAnalyzer:
         Returns:
             str: The identified medical specialty or 'General/Minor Care' if no match is found.
         """
-        prompt = self.GEMINI_JSON_PROMPT.format(injury_description=description)
+        prompt = self.GEMINI_JSON_PROMPT.format(injury_description=description, valid_specs = self.VALID_SPECIALTIES_STR)
         
         response = self.ai_client.generate_text(prompt, model_name="gemini-2.5-flash")
         

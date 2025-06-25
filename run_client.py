@@ -22,7 +22,7 @@ def main():
         return
     
     
-    patient_data = data_handler.get_patient_data_basic(1)
+    patient_data = data_handler.get_patient_data_basic(5)
     
     if patient_data is None:
         print("No patient data found. Exiting.")
@@ -34,7 +34,7 @@ def main():
     
     results_list = []
     
-    for index, row in patient_data.head(100).iterrows():
+    for index, row in patient_data.head(20).iterrows():
         patient_id = row['PatientID']
         injury = row['Injury/Sickness']
         
