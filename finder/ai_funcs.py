@@ -3,7 +3,7 @@ import google.generativeai as genai
 from dotenv import load_dotenv
 
 
-class AiClient:
+class GeminiClient:
     """
     A client for interacting with the Gemini AI API to generate text based on prompts.
     """
