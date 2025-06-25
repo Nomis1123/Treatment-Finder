@@ -62,7 +62,7 @@ Follow these steps to get the project running on your local machine.
 ### 1. Clone the Repository
 
 ```bash
-git clone <your-repository-url>
+git clone https://github.com/Nomis1123/Treatment-Finder.git
 cd Treatment-Finder
 ```
 
