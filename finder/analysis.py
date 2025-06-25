@@ -12,6 +12,45 @@ class SpecialtyAnalyzer:
     it escalates the task to a more powerful Generative AI model (Gemini)
     for advanced analysis.
     """
+    
+    VALID_SPECIALTIES_LIST = [
+        # --- Broad, High-Level Categories ---
+        'Cardiology',                # For all heart, major blood vessel, and circulation issues.
+        'Neurology',                 # For brain, spine, nerve, and muscle control issues.
+        'Oncology',                  # For all types of cancer and tumors.
+        'Orthopedics',               # For bones, joints, ligaments, and fractures.
+        'Gastroenterology',          # For the entire digestive system: esophagus, stomach, liver, pancreas, intestines.
+        'Pulmonology',               # For lungs and breathing issues.
+        'Nephrology/Urology',        # For kidneys, bladder, and urinary tract issues.
+        'Psychiatry',                # For mental health, behavioral, and addiction disorders.
+        'Rheumatology/Immunology',   # For autoimmune diseases (Lupus, RA) and systemic inflammation.
+        'Endocrinology',             # For hormonal and metabolic issues (Diabetes, Thyroid).
+        'Pediatrics',                # A crucial category for all childhood-specific illnesses.
+        
+        # --- More Specific & Surgical Categories ---
+        'Trauma/Critical Care',      # For severe, multi-system injuries, shock, and life support.
+        'General Surgery',           # A catch-all for common surgical needs (appendicitis, hernias, gallbladder).
+        'Vascular Surgery',          # For issues with arteries and veins not directly involving the heart.
+        'Plastic Surgery',           # For burns, complex wound repair, and reconstruction.
+        'Infectious Disease',        # For complex infections like HIV/AIDS, sepsis, resistant bacteria.
+        
+        # --- Population-Specific Categories ---
+        'Geriatrics',                # For conditions primarily affecting the elderly.
+        'Women\'s Health/Gynecology', # For reproductive health, pregnancy, and related issues.
+        
+        # --- Sensory & Outpatient Specialties ---
+        'Ophthalmology',             # For all eye-related conditions.
+        'Dermatology',               # For skin conditions.
+        'Pain Management',           # For chronic pain conditions like CRPS.
+        'Rehabilitation',            # For post-injury/stroke recovery and physical therapy.
+        
+        # --- Fallback Categories ---
+        'General/Minor Care',        # For low-acuity issues, primary care follow-up.
+        'Genetics'                   # For inherited disorders.
+    ]
+    
+    # The rest of the class remains the same...
+    VALID_SPECIALTIES_STR = ", ".join(VALID_SPECIALTIES_LIST)
 
     SPACY_SPECIALTY_MAP = {
     'Cardiology': ['heart', 'cardio', 'aorta', 'infarction', 'angina', 'stenosis', 'fibrillation', 'embolism', 'pericarditis'],
@@ -31,11 +70,19 @@ class SpecialtyAnalyzer:
     }
     
     GEMINI_JSON_PROMPT = """
-        You are an expert medical data processor. Analyze the patient's injury description
-        and return ONLY a valid string with the most relevant medical specialty.
-        If the description does not match any specific specialty, return 'General/Minor Care'.
+        You are an expert medical data processor. Your task is to classify the
+        following patient injury description into one of the approved medical specialties.
 
-        Patient Injury Description: '{injury_description}'
+        **Instructions:**
+        1. Analyze the 'Patient Injury Description'.
+        2. Choose the SINGLE best-fitting specialty from the 'Approved Specialties' list.
+        3. Your response MUST be ONLY the name of the chosen specialty and nothing else.
+
+        **Approved Specialties:**
+        {VALID_SPECIALTIES_STR}
+
+        **Patient Injury Description:**
+        '{injury_description}'
         """
     
 
