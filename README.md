@@ -7,7 +7,7 @@ This project is an advanced Python application that demonstrates a modern, AI-dr
 *   **Hybrid AI Analysis Engine:**
     *   Implements a smart, two-tiered strategy for classifying patient conditions.
     *   **Tier 1 (Local NLP):** Utilizes a fast, local `spaCy` model with a comprehensive, curated keyword map (`SPACY_SPECIALTY_MAP`) to instantly handle common and clearly defined medical cases.
-    *   **Tier 2 (Generative AI Escalation):** For complex, rare, or ambiguously worded conditions that the local model cannot confidently resolve, the system automatically escalates the task to the powerful **Google Gemini Pro** API.
+    *   **Tier 2 (Generative AI Alternative):** For complex, rare, or ambiguously worded conditions that the local model cannot confidently resolve, the system automatically escalates the task to the powerful **Google Gemini Pro** API.
 *   **Intelligent Prompt Engineering:**
     *   The Gemini API calls are controlled by a carefully engineered prompt that constrains the AI's output. It forces the model to choose from a pre-defined list of valid medical specialties, ensuring the response is always structured, predictable, and compatible with the system's hospital data.
 *   **Data-Driven Hospital Matching:**

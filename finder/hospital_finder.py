@@ -32,26 +32,26 @@ class HospitalFinder:
             'Gastroenterology', 'General/Minor Care', 'Orthopedics', 'General Surgery', 'Women\'s Health/Gynecology' 
         ],
         'Michael Garron Hospital': [
-            'Pulmonology', 'General/Minor Care', 'Orthopedics', 'General Surgery' ## NEW
+            'Pulmonology', 'General/Minor Care', 'Orthopedics', 'General Surgery' 
         ],
         'Sunnybrook Health Sciences Centre': [
             'Cardiology', 'Neurology', 'Oncology', 'Orthopedics', 'Trauma/Critical Care', 
-            'Women\'s Health/Gynecology', 'Psychiatry', 'Plastic Surgery', 'Vascular Surgery', ## NEW
-            'Infectious Disease', 'Dermatology' ## NEW
+            'Women\'s Health/Gynecology', 'Psychiatry', 'Plastic Surgery', 'Vascular Surgery', 
+            'Infectious Disease', 'Dermatology' 
         ],
         'The Hospital for Sick Children (SickKids)': [
             'Pediatrics', 'Cardiology', 'Neurology', 'Oncology', 'Orthopedics', 
-            'Gastroenterology', 'Genetics', 'Rheumatology/Immunology' ## NEW
+            'Gastroenterology', 'Genetics', 'Rheumatology/Immunology'
         ],
         'Humber River Hospital': [
-            'Cardiology', 'Oncology', 'General/Minor Care', 'Nephrology/Urology', 'General Surgery' ## NEW
+            'Cardiology', 'Oncology', 'General/Minor Care', 'Nephrology/Urology', 'General Surgery' 
         ],
         'Centre for Addiction and Mental Health (CAMH)': [
             'Psychiatry'
         ],
         'Women\'s College Hospital': [
             'Endocrinology', 'Women\'s Health/Gynecology', 'Dermatology', 
-            'Rheumatology/Immunology', 'Pain Management' ## NEW
+            'Rheumatology/Immunology', 'Pain Management' 
         ],
         'Baycrest Health Sciences': [
             'Rehabilitation', 'Geriatrics', 'Neurology'
