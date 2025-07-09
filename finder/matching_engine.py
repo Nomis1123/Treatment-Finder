@@ -79,7 +79,7 @@ class PatientDataHandler:
             raise ValueError("Invalid option. Please choose 1 or 2.")
 
 
-    def get_patient_data_basic(self, option: int) -> pd.DataFrame:
+    def get_patient_data_basic(self, option: str) -> pd.DataFrame:
         """
         Returns a DataFrame containing basic patient data.
         
@@ -93,15 +93,15 @@ class PatientDataHandler:
         """
         required_columns = ['PatientID', 'AffectedBodyPart', 'Injury/Sickness']
         
-        if option == 1:
+        if option == 'all':
             return self.simple_patient_df[required_columns]
-        elif option == 2:
+        elif option == 'low':
             return self.simple_patient_df.loc[self.simple_patient_df['Severity'] == 'Low', required_columns]
-        elif option == 3:
+        elif option == 'medium':
             return self.simple_patient_df.loc[self.simple_patient_df['Severity'] == 'Medium', required_columns]
-        elif option == 4:
+        elif option == 'high':
             return self.simple_patient_df.loc[self.simple_patient_df['Severity'] == 'High', required_columns]
-        elif option == 5:
+        elif option == 'chronic':
             return self.simple_patient_df.loc[self.simple_patient_df['Severity'] == 'Chronic', required_columns]
         else:
             raise ValueError("Invalid option. Please choose 1, 2, 3, or 4.")
