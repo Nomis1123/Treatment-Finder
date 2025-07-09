@@ -6,22 +6,55 @@ from finder.hospital_finder import HospitalFinder as hf
 from finder.matching_engine import PatientDataHandler as pdh
 
 
-def main():
-    
+def setup():
+    global ai_client, analyzer, hospital_finder, data_handler
     
     try:
         ai_client = ac()
         analyzer = sa(ai_client)
-        hospital_finder = hf("./Data/hospitalData.csv")
+        hospital_finder = hf("./Data/hospitalData.csv") 
         data_handler = pdh("./Data/patientData.csv", "./Data/hospitalData.csv")
         print("All components initialized successfully.")
         print(25*'-')
-        
+    
     except Exception as e:
-        print(f"Error initializing components: {e}")
+        print(f"Error during setup: {e}")
+        raise
+    
+def get_results_single(name: str, injury_desc: str):
+    """
+    Takes a patient's name and injury description, determines the specialty needed,
+    and finds hospitals that can treat the injury.
+    
+    Args:
+        name (str): The name of the patient.
+        injury_desc (str): A description of the patient's injury or sickness.
+        
+    Returns:
+        None
+    """
+    
+    determined_speciality = analyzer.get_specialty(injury_desc)
+    
+    if 'Error' in determined_speciality:
+        print(f"Error determining specialty for '{name}': {determined_speciality}")
         return
     
+    hospital_names = hospital_finder.get_hospital_by_specialty(determined_speciality)
     
+    if not hospital_names:
+        print(f"No hospitals found for specialty '{determined_speciality}' for patient '{name}'.")
+        return
+    
+    print(f"Patient: {name}")
+    print(f"Injury/Sickness: {injury_desc}")
+    print(f"Determined Specialty: {determined_speciality}")
+    print("Recommended Hospital(s):")
+    
+    for hospital in hospital_names:
+        print(f"- {hospital}")
+
+def get_results_csv():
     patient_data = data_handler.get_patient_data_basic('all')
     
     if patient_data is None:
@@ -63,15 +96,10 @@ def main():
 
     print(results_df)
         
-                
-                
-    
-
-    
-
-
 
 if __name__ == "__main__":
-    main()
+    setup()
+    get_results_single("John Doe", "Severe headache and dizziness")
+    
     
     
